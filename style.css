@@ -45,6 +45,8 @@ a {
 
 .card img {
     object-fit: cover;
+    height: auto;
+    width: 100%;
 }
 
 .card-title {
@@ -122,30 +124,35 @@ nav a {
 .formulaire-avec-icone {
     display:flex;
     align-items: center;
-    background-color: #F2F2F2;
-    border-radius:10px;
+    border-radius:15px;
     overflow: hidden;
     color:#000000;
+    background-color: #F2F2F2;
+
 }
 
-.gps-icon {
-    width: 18px; 
-    height: 18px;
+.formulaire-avec-icone i {
+    color: #000000;
     margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F2F2F2;
+
 }
+
 
 .formulaire-recherche input[type="text"], .formulaire-recherche button {
     text-align: center;
     padding: 15px 10px;
-    font-size:16px;
+    font-size: 16px;
     font-weight: bold;
+    width: 150px;
 
 }
 
 .formulaire-recherche input[type="text"] {
     border: 1px solid #F2F2F2;
     color: #000000;
-    width: 40%;
 }
 
 .formulaire-recherche input[type="text"]::placeholder {
@@ -158,10 +165,12 @@ nav a {
     background-color: #0065FC;
     color:#FFffff;
     border-left: none;
+    width : 130px;
 }
 
-.formulaire-recherche button img {
+.formulaire-recherche button i {
     display:none;
+    color: #FFffff;
     width: 40px;
     height: 40px;
 }
@@ -372,22 +381,18 @@ nav a {
     flex-wrap: nowrap;
     margin-top: 33px;
     padding: 0px;
-    width: 50%;;
     
  }
  
  .activites-cards img {
-    height: 80%;
-    height: 350px;
+    height: 400px;
+    width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
  }
  
  .activites-cards .card-title {
-    height: 20%;
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 4px;
+    padding: 5px 20px;  
  }
 
 
