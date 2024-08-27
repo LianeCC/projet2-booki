@@ -86,7 +86,7 @@ nav a {
 
 .lienmenu {
     display: flex;
-    align-content: space-between;
+    margin-left: 70px;    
 }
 
 .lienhebergement {
@@ -437,7 +437,7 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media all and (max-width: 1024px) {
+@media (max-width: 1024px) {
     
     .filtres {
         display: flex;
@@ -491,6 +491,68 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
+    .main-container {
+        padding: 0px;
+    }
+
+    header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+   
+    header img {
+        margin-bottom: 30px;
+    }
+
+    .lienmenu {
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        margin:0px;
+    }
+ 
+    nav a {
+        margin : 0px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 2.5px solid #F2F2F2 ;
+
+    }
+
+    .lienhebergement {
+        padding-top: 0px;
+        border-top: 0px solid #FFffff;
+    }
+    
+    .lienactivites {
+        padding-top: 0px;
+        border-top: 0px solid #FFffff;
+    }
+    
+    .lienhebergement:hover {
+        color:#0065FC;
+        border-top: 0px solid #0065FC;
+        border-bottom: 2.5px solid #0065FC; 
+    }
+    
+    .lienactivites:hover {
+        color:#0065FC;
+        border-top: 0px solid #0065FC;
+        border-bottom: 2.5px solid #0065FC; 
+
+    }
+    
+
+    .promesse {
+        padding: 0px 25px;
+
+    }
+    
+
+
+    
     .formulaire-recherche button .text {
         display:none;
     }
