@@ -269,19 +269,21 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    row-gap: 30px;
     flex-wrap: wrap;
+    margin-top: 33px;
+
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 33px;
 }
 
 .hebergements-cards img {
     width: 240px;
-    max-height: 120px;
+    max-height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -397,7 +399,7 @@ button {
 }
 
  .activites-cards img {
-    height: 450px;
+    height: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
  }
@@ -442,6 +444,10 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     
+    .main-container {
+        padding: 0px 40px;
+    }
+
     .filtres {
         display: flex;
         flex-direction: column;
@@ -485,10 +491,6 @@ footer {
         font-size: 13px;
     }
 
-    .activites-cards a {
-        width: 24%;
-    }
-
     .activites-cards img {
         height: 200px;
     }
@@ -509,7 +511,7 @@ footer {
 
     header {
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
    
     header img {
@@ -604,7 +606,7 @@ footer {
     }
 
     .h4filtres {
-        margin-left: 15px;
+        margin-left: 20px;
         margin-top: 30px;
         margin-bottom: 15px;;
     }
@@ -632,7 +634,8 @@ footer {
     }
 
     .point-information {
-        margin-left: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 10px;
     }
 
@@ -642,13 +645,12 @@ footer {
 
     .hebergements-and-populaires section {
         border-radius: 0px;
-        padding: 30px 15px;
+        padding: 30px 20px;
     }
     
     .populaires {
         margin: 0px;
         background-color: #F2F2F2;
-
     }
 
     .populaires-cards a {
@@ -667,18 +669,48 @@ footer {
     .hebergements {
         background-color: #FFffff;
         width: 100%;
+        margin-top: 10px;
     }
 
     .hebergements-cards {
         flex-direction: column;
+        margin-top: 0px;
     }
 
     .hebergements-cards .card {
         margin-top: 15px;
+        margin-bottom: 0px;
     }
     .hebergements-cards img {
         width: 100%;
     }
+
+    .afficher-plus {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .activite {
+        margin: 0px 20px;
+    }
+
+    .activites-cards {
+        flex-direction: column;
+    }
+
+    .activites-cards a {
+        width: 100%;
+    }
+
+    .activites-cards img {
+        height: 150px;
+    }
+
+
+
+
+
+
 
     footer {
         flex-direction: column;
