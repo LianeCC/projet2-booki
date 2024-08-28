@@ -17,7 +17,7 @@
 <body>
     <div class="main-container">
 
-        <!------------ navigation et promesse ----------------->
+    <!-- ----- navigation et promesse -------------->
         <header>
             <img src="./images/logo/Booki.png" alt="Logo Booki">
             <nav class="lienmenu"> 
@@ -31,26 +31,19 @@
             <p>En plein centre-ville ou en pleine nature</p>
         </div>
 
-      <!------------ formulaire recherche ----------------->
+    <!------- formulaire recherche -------------->
+        <form action="" method="get" class="formulaire-recherche">
+            <div class="iconegps-rechercher">
+                <div class="iconegps"><i class="fa-solid fa-location-dot"></i></div>                    
+                <input type="text" name="ville" placeholder="Marseille, France"> 
+            </div>
+            <div class="bouton">
+                <div class="iconeloupe"><i class="fa-solid fa-magnifying-glass"></i></div>                   
+                <button type="submit" class="Rechercher">Rechercher</button>
+            </div>
+        </form>
 
-      
-            <form action="" method="get" class="formulaire-recherche">
-                <div class="iconegps-rechercher">
-                    <span class="iconegps"><i class="fa-solid fa-location-dot"></i></span>                    
-                    <input type="text" name="ville" placeholder="Marseille, France"> 
-                    <span class="iconeloupe"><i class="fa-solid fa-magnifying-glass"></i></span>                    
-                </div>
-                <div class="bouton">
-                    <button type="submit" class=""Rechercher>Rechercher</button>
-                </div>
-
-            </form>
-        
- 
-
-
-
-         <!------------ filtres ----------------->
+    <!-- ----- filtres ----------------->
         <div class="filtres">
             <h4 class="h4filtres">Filtres</h4>
             <div class="ensemble-filtres">
@@ -74,11 +67,11 @@
         </div>
 
         <div class="point-information">
-            <i class="fa-solid fa-info" alt="icône point information"></i>
+            <i class="fa-solid fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
-        <!------------ Main : Hebergements et Plus Populaires ----------------->
+    <!-- ----- Main : Hebergements et Plus Populaires -------------->
         <main>
             <div class="hebergements-and-populaires">      
                 <section class="hebergements" id="liennav-hebergemenst">
@@ -270,7 +263,7 @@
             </div>
         </main>
 
-        <!-------------- section Activites ------------------------>
+    <!-- ----- section Activites --------------->
         <div class="activite">
             <section class="activites" id="liennav-activites">
                 <h2 class="section-title">Activités à Marseille</h2>
@@ -278,32 +271,32 @@
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image d'un port avec bateau'">
-                            <h3 class="card-title">Vieux-Port</h3>
+                            <div class="cardtitle-activites"><h3 class="card-title">Vieux-Port</h3></div>
                         </article>
                     </a>
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/paul-hermann.jpg" alt="Image d'un fort sur un promontoire rocheux">
-                            <h3 class="card-title">Fort de Pomègues</h3>
+                            <div class="cardtitle-activites"><h3 class="card-title">Fort de Pomègues</h3></div>
                         </article>
                     </a>
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image des calanques et de la mer">
-                            <h3 class="card-title">Parc National des Calanques</h3>
+                            <div class="cardtitle-activites"><h3 class="card-title">Parc National des Calanques</h3></div>
                         </article>
                     </a>
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de l'église Notre-Dame de Marseille">
-                            <h3 class="card-title">Notre-Dame-de-la-Guarde</h3>
+                            <div class="cardtitle-activites"><h3 class="card-title">Notre-Dame-de-la-Guarde</h3></div>
                         </article>
                     </a>
                 </div>
             </section>
         </div>
 
-        <!------------------ Footer ----------------------->
+    <!-- ----- Footer ---------->
         <footer>
             <div class="section-footer">
                 <h4>À propos</h4>
@@ -311,20 +304,17 @@
                 <a href="#">Conditions générales</a>
                 <a href="#">Données et confidentialité</a>
             </div>
-
             <div class="section-footer">
                 <h4>Nos hébergements</h4>
                 <a href="#">Charte qualité</a>
                 <a href="#">Proposer votre hôtel</a>
             </div>
-
             <div class="section-footer">
                 <h4>Assistance</h4>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
             </div>
         </footer>
-
 
     </div>
 </body>
